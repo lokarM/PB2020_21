@@ -10,7 +10,7 @@ def napolni_tabelo_film(conn, filmi):
             (naslov,dolzina,leto,ocena,id,metascore,glasovi,zasluzek,oznaka,opis)
             VALUES (?,?,?,?,?,?,?,?)
         '''
-        PARAM = [
+        parametri = [
             film['naslov'],
             film['dolzina'],
             film['leto'],
