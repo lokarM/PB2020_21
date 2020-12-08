@@ -9,5 +9,5 @@ sql_ukaz = 'DELETE  FROM film'
 cur.execute(sql_ukaz)
 print(cur.fetchone())
 sql_ukaz = 'SELECT naslov, leto, ocena FROM film LIMIT 3'
-cur.execute(sql_ukaz)
+cur.executescript(sql_ukaz)
 print(cur.fetchone())
